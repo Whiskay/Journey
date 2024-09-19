@@ -1,0 +1,143 @@
+/* Authour: Whiskay.dev */
+/* Common */
+:root {
+  --dark-a-color: lightskyblue;
+  --dark-bg-color: #181818;
+  --dark-btn-bg-color: #14c76a;
+  --dark-btn-fg-color: #000;
+  --dark-fg-color: #fff;
+  --light-btn-bg-color: #1967bb;
+  --light-btn-fg-color: #fff;
+  --popup-body-bg-color: #14c76a;
+  --tipblock-bg-color: #555;
+  --tipblock-fg-color: #fff;
+
+}
+
+body {
+  font-family: -apple-system, Helvetica, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.full-width {
+  width: 100%
+}
+
+.height-half-screen {
+  height: 25em
+}
+
+.height-quarter-screen {
+  height: 5em
+}
+
+.small-icon {
+  height: 1em;
+}
+
+.float-left {
+  float: left
+}
+
+.float-right {
+  float: right
+}
+
+/*Popup Page style */
+.popup-btn {
+  height: 1em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 16em;
+  margin: 1em auto;
+}
+
+.popup-btn-info {
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: var(--tipblock-bg-color);
+  color: var(--tipblock-fg-color);
+}
+
+.popup-btn-action {
+  padding: 1em;
+  background-color: var(--light-btn-bg-color);
+  color: #fff;
+}
+
+.popup-container {
+  padding: 1em;
+  background-color: var(--popup-body-bg-color);
+  border: 1px dotted black;
+}
+
+/*Options Page style */
+.page-container {
+  width: 80%;
+  margin: auto;
+  transition: background-color 0.3s ease;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.theme-change-btn {
+  height: 1.2em;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.page-container button {
+  margin: 1em auto;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: var(--light-btn-bg-color);
+  color: var(--light-btn-fg-color);
+  text-decoration: none;
+  border-radius: 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+.copy-status-tip {
+  float: inline-end;
+  margin: 1.5em auto;
+  padding: 1em
+}
+
+.shortcut-key-error {
+  color: #d40808;
+  padding-left: 1em
+}
+
+.page-container.dark-mode {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-fg-color);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode button {
+  background-color: var(--dark-btn-bg-color);
+  color: var(--dark-btn-fg-color);
+}
+
+.dark-mode textarea {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-fg-color);
+}
+
+.select-shortcut-key {
+  margin: 0.5em auto !important;
+  padding: 0.5em !important;
+  border-radius: 0px !important
+}
+
+.border-radius-100 {
+  border-radius: 100%;
+}
+
+.dark-mode a {
+  color: var(--dark-a-color);
+}
+
+a {
+  text-decoration: none;
+}

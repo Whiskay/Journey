@@ -1,0 +1,45 @@
+{
+    "name": "Journey",
+    "version": "1.0.0",
+    "description": "Extension to manage your web journey.",
+    "manifest_version": 2,
+    "author": "Whiskay",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Journey"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "background.js",
+                "worker.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "scripting",
+        "tabs",
+        "contextMenus"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "options_page": "options.html",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "journey1.0@whiskay.dev"
+        }
+    },
+    "icons": {
+        "16": "./icon16.png",
+        "32": "./icon32.png",
+        "48": "./icon48.png",
+        "128": "./icon128.png"
+    }
+}

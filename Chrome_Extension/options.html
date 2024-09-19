@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings | Journey</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="page-container">
+    <div>
+      <h1>
+        Settings
+        <img
+          src="assets/icon_theme.svg"
+          alt="theme-icon"
+          id="theme-toggle-button"
+          class="small-icon theme-change-btn float-right border-radius-100 white-bg"
+        />
+      </h1>
+    </div>
+    <hr />
+    <br />
+    <div>
+      <h2>Shortcuts</h2>
+      <h3>
+        - Copy markdown style link: Alt +
+        <button id="select-shortcut-key" class="select-shortcut-key">
+          <span id="shortcut-key-value"> </span>
+        </button>
+        <span id="shortcut-key-error" class="shortcut-key-error"> </span>
+      </h3>
+    </div>
+    <div>
+      <h2>Extract all tabs from current window</h2>
+      <button id="options-getlink-tabs-md">Markdown style</button>
+      <button id="options-getlink-tabs-csv">Comma Seperated</button>
+      <button class="float-right" id="options-copy-to-clipboard">
+        Copy to clipboard
+      </button>
+      <span class="copy-status-tip"> <span id="copy-status"> </span></span>
+    </div>
+
+    <br />
+    <textarea class="full-width height-half-screen" id="results"></textarea>
+    <br />
+    <div>
+      <br />
+      <strong
+        ><span>Current window tabs : <span id="number-of-tabs"></span></span>
+      </strong>
+      <br />
+      <strong
+        ><span>Total tabs : <span id="total-number-of-tabs"></span></span>
+      </strong>
+    </div>
+    <br />
+    <div>
+      <h2>Import Tabs</h2>
+      <h4>
+        Paste the content with links and then click Validate button to get the
+        list of valid links.
+      </h4>
+      <textarea
+        class="full-width height-quarter-screen"
+        id="import-tabs"
+      ></textarea>
+      <div><a id="import-tab-count" href="#import-tab-valid-urls"> </a></div>
+      <div><span id="import-tab-valid-urls"> </span></div>
+      <button id="import-tabs-validate">Validate Tabs</button>
+      <button id="import-tabs-action">Open all valid tabs</button>
+    </div>
+    <script type="module" src="background.js"></script>
+    <div>
+      <hr />
+      <span
+        >Facing issue or need new features, raise an issue at:
+        <a href="https://www.github.com/Whiskay/Journey/Issues"
+          >github.com/Whiskay/Journey/Issues</a
+        ></span
+      >
+      <br />
+      <hr />
+      <p>
+        <span>
+          <a href="https://www.github.com/Whiskay/Journey">
+            OpenSource Code
+          </a></span
+        >
+        |
+        <span>
+          <a href="https://www.whiskay.dev/pub/Journey"> App page </a></span
+        >
+        |
+        <span> <a href="mail:jay@whiskay.dev"> Contact </a></span>
+      </p>
+      <hr />
+    </div>
+  </body>
+</html>

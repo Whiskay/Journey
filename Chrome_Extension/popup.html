@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Journey</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="popup-container">
+    <h2>
+      <span>
+        <a target="_blank" href="https://whiskay.dev/pub/journey"> Journey </a>
+      </span>
+      <span>
+        <a target="_blank" href="/options.html">
+          <img
+            class="small-icon float-right"
+            src="assets/icon_settings.svg"
+            alt="Go to Settings"
+          />
+        </a>
+      </span>
+    </h2>
+    <h4>Share and manage your web Journey</h4>
+    <h4 class="popup-btn popup-btn-info">
+      Tip: Use Alt + <span id="shortcut-key-value"></span> to copy link
+    </h4>
+
+    <a
+      class="popup-btn popup-btn-action"
+      id="copy-current-tab-markdown-link"
+      href=""
+    >
+      <strong> Copy tab link </strong>
+    </a>
+    <a class="popup-btn popup-btn-action" target="_blank" href="/options.html">
+      <strong> Extract multiple links </strong>
+    </a>
+
+    <script type="module" src="background.js"></script>
+  </body>
+</html>

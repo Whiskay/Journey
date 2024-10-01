@@ -10,8 +10,7 @@ try {
     }
     if (window.location.pathname == "/options.html") {
         setupOptions();
-    }
-    setupCommon();
+    } 
 }
 catch (exp) {
     console.warn(`
@@ -108,23 +107,8 @@ function restoreUserTheme() {
         changeTheme();
     }
 }
-
-function setupCommon() {
-    document.addEventListener('keydown', function (e) {
-        chrome.storage.local.get(["shortcutKey"]).then((result) => {
-            let shortcutKey = result.shortcutKey
-            if (e.altKey && e.key.toUpperCase() === shortcutKey.toUpperCase()) {
-                var markdownFormatLink = `[${document.title}](${document.URL})`
-                window.navigator.clipboard.writeText(markdownFormatLink).catch(exp => {
-                    console.warn("Error: " + exp) // An error occurred
-                });
-            }
-        });
-    });
-}
-
-function setupOptions() {
-    setupShortcutKey()
+ 
+function setupOptions() { 
     document.getElementById('import-tab-count')?.addEventListener('click', () => { showValidUrls() });
     document.getElementById('import-tabs-action').style.display = 'none';
     document.getElementById('import-tabs-action')?.addEventListener('click', () => { importTabs() });
@@ -132,15 +116,13 @@ function setupOptions() {
     document.getElementById('markdown-link')?.addEventListener('click', () => { copyCurretTabMarkdownLink() });
     document.getElementById('options-getlink-tabs-md')?.addEventListener('click', () => { getCurretWindowLinks_MD() });
     document.getElementById('options-getlink-tabs-csv')?.addEventListener('click', () => { getCurretWindowLinks_CSV() });
-    document.getElementById('options-copy-to-clipboard')?.addEventListener('click', () => { copyToClipboard() });
-    document.getElementById('select-shortcut-key')?.addEventListener('click', () => { updatingShortcutKey() });
+    document.getElementById('options-copy-to-clipboard')?.addEventListener('click', () => { copyToClipboard() }); 
     document.getElementById('theme-toggle-button')?.addEventListener('click', () => { changeTheme() });
     restoreUserTheme()
     getCurretWindowLinks_MD()
 }
 
-function setupPopUp() {
-    setupShortcutKey()
+function setupPopUp() { 
     document.getElementById('copy-current-tab-markdown-link')?.addEventListener('click', () => { copyCurretTabMarkdownLink() });
 }
 
@@ -175,52 +157,4 @@ function importTabs() {
         chrome.tabs.create({ url: tabLink.url });
     });
 }
-
-function setupShortcutKey() {
-    chrome.storage.local.get(["shortcutKey"]).then((result) => {
-        var shortcutKey = 'C'; // Default shortcut key is 'C'
-        if (result != undefined && result.shortcutKey != undefined && result.shortcutKey != '') {
-            shortcutKey = result.shortcutKey
-        }
-        else {
-            chrome.storage.local.set({ shortcutKey: shortcutKey })
-        }
-        document.getElementById('shortcut-key-value').innerHTML = shortcutKey;
-    });
-}
-
-
-function updatingShortcutKey() {
-    document.getElementById('shortcut-key-value').innerHTML = "Press any key";
-    document.addEventListener("keydown", updateShortcutPressHandler); // Add event listener to capture key press
-}
-
-function updateShortcutPressHandler(e) {
-    var keynum;
-
-    if (window.event) { // IE                  
-        keynum = e.keyCode;
-    } else if (e.which) { // Netscape/Firefox/Opera                 
-        keynum = e.which;
-    }
-
-    var charKey = String.fromCharCode(keynum)
-    var code = charKey.charCodeAt(0);
-    if (!(code > 47 && code < 58) && // numeric (0-9)
-        !(code > 64 && code < 91) && // upper alpha (A-Z)
-        !(code > 96 && code < 123)) { // lower alpha (a-z)
-        return false;
-    }
-    if (charKey.toUpperCase() == 'D') {
-        var errorMessage = `[ERROR: Alt + D is a browser shortcut. Please select some other key.]`
-        document.getElementById("shortcut-key-error").innerHTML = errorMessage;
-        return false;
-    }
-
-    document.getElementById("shortcut-key-error").innerHTML = '';
-    document.getElementById("shortcut-key-value").innerHTML = charKey;
-
-    chrome.storage.local.set({ shortcutKey: charKey })
-    document.removeEventListener("keydown", updateShortcutPressHandler); // Remove the event listener after the first key press
-    return true;
-}
+ 

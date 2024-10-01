@@ -1,24 +1,19 @@
 {
-    "name": "Journey",
-    "version": "1.0.0",
+    "name": "Journey - Lite",
+    "version": "1.0.3",
     "description": "Extension to manage and share your web journey.",
     "manifest_version": 3,
     "author": "Whiskay",
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Journey"
-    },
-    "host_permissions": ["*://*/*"],
-    "content_scripts": [
-        {
-            "matches": [
-                "https://*/*"
-            ],
-            "js": [
-                "background.js" 
-            ]
+        "default_title": "Journey",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
         }
-    ],
+    },
     "permissions": [
         "storage",
         "scripting",

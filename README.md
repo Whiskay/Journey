@@ -27,6 +27,17 @@ Extension to manage and share your web journey.
 
 ## Install: Available on [Chrome][link-chrome] and [Firefox][link-firefox]
 
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg" width="48" alt="Chrome" valign="middle">][link-chrome]
+[<img valign="middle" src="https://img.shields.io/chrome-web-store/v/beokknkebpiigackckbaapoiohbgflac.svg?label=%20">][link-chrome] 
+also compatible with
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/edge/edge.svg" width="24" alt="Edge" valign="middle">][link-chrome] 
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/opera/opera.svg" width="24" alt="Opera" valign="middle">][link-chrome] 
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/brave/brave.svg" width="24" alt="Brave" valign="middle">][link-chrome]
+
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/firefox/firefox.svg" width="48" alt="Firefox" valign="middle">][link-firefox] 
+[<img valign="middle" src="https://img.shields.io/amo/v/search-switch.svg?label=%20">][link-firefox] 
+
+
 ## Lite version
 - For those who prefer to minimize extension permissions, we offer a lightweight version. Lite version just requires permissions for "tabs" and "storage" but with limited permissions comes limited powers. The lite version lacks context menu options and shortcut keys for getting tab URLs as Markdown links.
 - Lite version can export and import multiple tabs URLs in one go.

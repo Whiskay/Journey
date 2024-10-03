@@ -27,6 +27,15 @@ Extension to manage and share your web journey.
 
 ## Install: Available on [Chrome][link-chrome] and [Firefox][link-firefox]
 
+## Lite version
+- For those who prefer to minimize extension permissions, we offer a lightweight version. Lite version just requires permissions for "tabs" and "storage" but with limited permissions comes limited powers. The lite version lacks context menu options and shortcut keys for getting tab URLs as Markdown links.
+- Lite version can export and import multiple tabs URLs in one go.
+
+[link-chrome-lite]: https://chromewebstore.google.com/detail/journey-lite/oeecbhpbepcebmgedlhajcjpnmefcmbm
+
+## Lite version : Available on [Chrome][link-chrome-lite]  
+ 
+
 ## Demo [Journey - Open-source web extension to manager and share your web Journey - YouTube](https://www.youtube.com/watch?v=vV9ckTCfkXI)
  
 

@@ -21,6 +21,11 @@ Extension to manage and share your web journey.
   - Open-Sourced: You can copy and update the code for according to your needs.
   - Template: This repository can be used for creating your own extensions from scratch.
  
+## Code: https://github.com/Whiskay/Journey
+- Branches:
+  1. [Lite](https://github.com/Whiskay/Journey/tree/lite) - Published as Lite version
+  2. [Main](https://github.com/Whiskay/Journey/tree/main) - Published as main version
+  3. [Dev](https://github.com/Whiskay/Journey/tree/dev) - W.I.P - Testing out features
 
 [link-chrome]: https://chromewebstore.google.com/detail/journey/engpgehjjalaffbchfheidmhgfeoicea
 [link-firefox]: https://addons.mozilla.org/en-US/firefox/addon/webjourney/

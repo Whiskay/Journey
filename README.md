@@ -20,17 +20,15 @@ Extension to manage and share your web journey.
   - Non bloated: No trackers or Frameworks.
   - Open-Sourced: You can copy and update the code for according to your needs.
   - Template: This repository can be used for creating your own extensions from scratch.
+ 
 
-<!--
-
-[link-chrome]: https://chromewebstore.google.com/detail/
-[link-firefox]: https://addons.mozilla.org/en-US/firefox/addon/
+[link-chrome]: https://chromewebstore.google.com/detail/journey/engpgehjjalaffbchfheidmhgfeoicea
+[link-firefox]: https://addons.mozilla.org/en-US/firefox/addon/webjourney/
 
 ## Install: Available on [Chrome][link-chrome] and [Firefox][link-firefox]
 
-## Demo
-
- -->
+## Demo [Journey - Open-source web extension to manager and share your web Journey - YouTube](https://www.youtube.com/watch?v=vV9ckTCfkXI)
+ 
 
 ## Chrome: Install from Source
 

@@ -54,6 +54,7 @@ also compatible with
 
 ## Demo [Journey - Open-source web extension to manager and share your web Journey - YouTube](https://www.youtube.com/watch?v=vV9ckTCfkXI)
  
+<a href="https://www.producthunt.com/posts/journey-57a99476-558a-44ab-9779-8c4430b4e197?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-journey&#0045;57a99476&#0045;558a&#0045;44ab&#0045;9779&#0045;8c4430b4e197" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=494055&theme=light" alt="Journey - Share&#0032;and&#0032;manage&#0032;your&#0032;web&#0032;Journey | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 ## Chrome: Install from Source
 

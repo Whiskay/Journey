@@ -119,6 +119,10 @@ body {
   color: var(--dark-btn-fg-color);
 }
 
+.page-container button{ 
+  font-size: 15px;
+}
+
 .dark-mode textarea {
   background-color: var(--dark-bg-color);
   color: var(--dark-fg-color);

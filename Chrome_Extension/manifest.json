@@ -1,12 +1,12 @@
 {
-    "name": "Journey",
-    "version": "1.0.0",
-    "description": "Extension to manage and share your web journey.",
+    "name": "Journey: Tab Collector",
+    "version": "1.0.3",
+    "description": "Extension to manage and share your web journey by sharing open tab URLs.",
     "manifest_version": 3,
     "author": "Whiskay",
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Journey"
+        "default_title": "Journey: Tab Collector"
     },
     "host_permissions": ["*://*/*"],
     "content_scripts": [
@@ -20,15 +20,8 @@
         }
     ],
     "permissions": [
-        "storage",
-        "scripting",
-        "tabs",
-        "contextMenus"
+        "tabs"
     ],
-    "background": {
-        "service_worker": "worker.js",
-        "type": "module"
-    },
     "options_page": "options.html",
     "icons": {
         "16": "icons/icon16.png",

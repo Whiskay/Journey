@@ -1,5 +1,5 @@
 {
-    "name": "Journey",
+    "name": "Journey: Tab Collector",,
     "version": "1.0.0",
     "description": "Extension to manage your web journey.",
     "manifest_version": 2,
@@ -22,8 +22,7 @@
     "permissions": [
         "storage",
         "scripting",
-        "tabs",
-        "contextMenus"
+        "tabs"
     ],
     "background": {
         "scripts": [

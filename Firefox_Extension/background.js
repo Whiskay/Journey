@@ -97,12 +97,14 @@ function copyToClipboard() {
 function changeTheme() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-    element.classList.contains("dark-mode") ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
+    // element.classList.contains("dark-mode") ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
     document.getElementById('theme-toggle-button').style.rotate = element.classList.contains("dark-mode") ? '0deg' : '180deg';
 }
 
 function restoreUserTheme() {
-    var userTheme = localStorage.getItem('theme');
+    // var userTheme = localStorage.getItem('theme');
+    const result = window.matchMedia('(prefers-color-scheme: dark)');
+    let userTheme = result.matches ? "dark" : "light";
     document.getElementById('theme-toggle-button').style.rotate = userTheme == "dark" ? '0deg' : '180deg';
     if (userTheme == "dark") {
         changeTheme();

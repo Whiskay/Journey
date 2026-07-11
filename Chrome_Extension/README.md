@@ -1,4 +1,4 @@
-# Journey
+# Journey: Tab Collector
 
 Extension to manage and share your web journey.
 
